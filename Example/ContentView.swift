@@ -7,31 +7,23 @@
 
 import SwiftUI
 
+let headingText: String = "This Graph Shows the Profit ($) Made After 1 year by Pointfree."
+
+
 struct ContentView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 30) {
-            Text("Hello, world!")
-                .padding()
-                
-            HStack() {
-                
-                Image(systemName: "gear")
-                    .padding()
-                    
-                Text("Settings")
-                    .padding()
-                Spacer()
-            }.background(Color.blue)
-              
+            Section {
+                Text(headingText)
+                    .font(.custom("Agrandir", size: 13))
+            }
             
-            
-                
-            Text.init(.now, format: .dateTime)
-            
-                
+                        
+            Section {
+                //
+                Text("This section will have graph data for the company")
+            }
         }
-        Spacer()
-        
     }
 }
 
